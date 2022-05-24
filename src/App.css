@@ -1,0 +1,159 @@
+#isi{
+    padding-top: 85px;
+    width: 100%;
+    min-height: calc(100vh - 63px);
+}
+
+#search{
+    display: flex;
+    border-radius: 20px;
+    border: 2px solid #1c1f4c;
+    line-height: 44px;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 18px;
+}
+
+#search input{
+    margin: 0 10px;
+    font-size: 15px;
+    padding: 10px;
+    width: 200%;
+    border: none;
+    border-radius: 20px;
+}
+
+#search input:focus{
+    outline: none;
+}
+
+#search button{
+    padding: 9px 7px 6px 7px;
+    background-color: white;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 1px solid rgb(197, 197, 197);
+    cursor:pointer;
+}
+
+#search button:hover{
+    background-color: #fccf17;
+}
+
+#news-List{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#news-List .news{
+    padding: 0 10px 25px 10px;
+}
+
+#news-List .news .info{
+    font-size: 13px;
+    line-height: 18px;
+    color: gray;
+}
+
+#news-List .news .info .bahasa{
+    font-weight: 600;
+}
+
+#news-List .news .judul{
+    color: #1c1f4c;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+#news-List .news .judul:hover{
+    font-size: 20px;
+    color: #00848c;
+    text-decoration: underline;
+}
+
+#news-List .news .kategori{
+    font-weight: 550;
+}
+
+#news-List .news .katName{
+    color: #037272;
+    font-weight: 600;
+}
+
+@media (max-width: 898px){
+    #isi{
+        padding-top: 120px;
+        min-height: calc(100vh - 61px);
+    }
+    #news-List{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 691px){
+    #isi{
+        padding-top: 85px;
+        min-height: calc(100vh - 58px);
+    }
+    #search input{
+        font-size: 13px;
+        padding: 5px;
+    }
+    #news-List .news{
+        padding: 0 10px 20px 10px;
+    }
+    #news-List .news .info{
+        font-size: 11px;
+        line-height: 15px;
+    }
+    #news-List .news .judul{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    #news-List .news .kategori{
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 460px){
+    #isi{
+        padding-top: 72px;
+        min-height: calc(100vh - 50px);
+    }
+    #search input{
+        font-size: 10px;
+        padding: 0;
+        margin: 0 8px;
+    }
+    #search img{
+        height: 20px;
+        padding-top: 5px;
+    }
+    #search button{
+        padding: 2px 1px;
+    }
+    #news-List{
+        margin-bottom: 12px;
+    }
+    #news-List .news{
+        padding: 0 10px 18px 10px;
+    }
+    #news-List .news .info{
+        font-size: 9px;
+        line-height: 13px;
+    }
+    #news-List .news .judul{
+        font-size: 13px;
+        line-height: 23px;
+    }
+    #news-List .news .kategori{
+        font-size: 9px;
+        line-height: 13px;
+    }
+}

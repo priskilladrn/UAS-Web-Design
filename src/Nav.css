@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  }
+
+.navBar{
+      display: inline-flex;
+      width: 100%;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
+.navBar a .logo{
+      color: #07ccd6;
+}
+
+.navBar h1{
+      display: inline-flex;
+      padding: 15px 10px 5px 10px;
+      margin: 0 0 10px 3%;
+}
+
+.navBar .kategori{
+      margin-left: 3%;
+}
+
+.navBar .kategori a, .responsive a{ 
+      display: inline-flex;
+      cursor: pointer;
+}
+
+.responsive{
+      display: none;
+      text-align: center;
+      padding-bottom: 5px;
+      width: 100%;
+      background-color: #00848c;
+      padding-left: 5%;
+      padding-right: 3%;
+}
+
+.responsive a p{
+      width: 100%;
+      margin-right: 5px;
+      padding: 7px;
+}
+
+.kategori a p{
+      margin-right: 5px;
+      padding: 10px;
+      height: 100%;
+}
+
+.navBar a{
+      text-decoration: none;
+      color: white;
+}
+
+.navBar .active{
+      color: #fccf17;
+}
+
+.navBar .responsive .active{
+      color: #fec20f;
+}
+
+.navBar .kategori a:hover, .responsive a:hover{
+      background-color: #00848c;
+      border-radius: 5px;
+}
+
+#navigasi{
+      background-color: #1c1f4c;
+      position: fixed;
+      width: 100%;
+}
+
+#hamburger{
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 23px 5%;
+}
+
+#hamburger img{
+      height: 25px;   
+}
+
+@media (max-width: 898px){
+      .navBar h1{
+            margin-bottom: 0;
+            width: 100%;
+      }
+      .navBar .kategori{
+            width: 100%;
+            display: flex;
+            margin-right: 3%;
+      }
+  }
+
+@media (max-width: 691px){
+      .navBar h1{
+            width: 100%;
+            margin-right: 30px;
+            margin-bottom: 10px;
+      }
+      #hamburger{
+            display: block;
+      }
+      .navBar .kategori{
+            display:none;
+      }
+      .responsive{
+            display: block;
+      }
+}
+
+@media (max-width: 460px){
+      .navBar h1{
+            padding-top: 10px;
+            font-size: 27px;
+      }
+      #hamburger{
+            padding: 20px 5%;
+      }
+      #hamburger img{
+            height: 20px;   
+      }
+      .responsive a p{
+            font-size: 13px;
+            padding: 5px;
+      }
+}
